@@ -30,6 +30,7 @@ function Form() {
         ))}
       </select>
       <input type="text" placeholder="Item..."></input>
+      <button>Add</button>
     </form>
   );
 }
@@ -38,7 +39,7 @@ function PackingList() {
     <div className="list">
       <ul>
         {initialItems.map((item) => (
-          <Item itemObj={item} />
+          <Item itemObj={item} key={item.id} />
         ))}
       </ul>
     </div>
