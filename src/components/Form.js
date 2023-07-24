@@ -7,7 +7,7 @@ export default function Form({ onAddItems }) {
   function submitHandler(e) {
     e.preventDefault();
 
-    if (!description) return; // it is like if (description=== ') return ;
+    if (!description) return; // it is like if (description=== '') return ;
 
     const newItem = { description, quantity, packed: false, id: Date.now() };
     console.log(newItem);
